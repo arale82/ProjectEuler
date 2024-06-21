@@ -1,3 +1,4 @@
+import { useState } from "react";
 
 var mainNumber = 600851475143;
 
@@ -14,18 +15,28 @@ function TitleSection(){
   );
 }
 
-
-
-export default function LargestPrimeFactor(){
-  
+function findPrimeFactors(number){
   var factors = [];
-  var checkNumber = mainNumber;
+  var checkNumber = number;
   for(var i=0; i< primeNums.length; i++){
     if(checkNumber % primeNums[i] === 0){
       factors.push(primeNums[i]);
       checkNumber = checkNumber / primeNums[i];
     }
   }
+  return factors;
+}
+
+export default function LargestPrimeFactor(){
+  const [numberInput, setNumberInput] = useState();
+  const [formResult, setFormResult] = useState();
+
+  function handleClick(){
+    setFormResult(findPrimeFactors(parseInt(numberInput)).toString());
+    setNumberInput(null);
+  }
+  
+  var factors = findPrimeFactors(mainNumber);
   var printResult = factors[factors.length-1].toString();
   return (
     <div>
@@ -34,6 +45,19 @@ export default function LargestPrimeFactor(){
       <p>The Largest Prime Factor of {mainNumber} is <strong>{printResult}</strong></p>
       
       <p>All the prime factors of {mainNumber} are: {factors.toString()}</p>
+
+      <form className="row g-3">
+        <h3>Find Largest Prime Factor:</h3>
+        <div className="col-auto">
+          <label className="visually-hidden" for="numberInput">Find the Largest Prime Factor for another number:</label>
+          <input type="number" className="form-control" name="numberInput" size="10"
+            value={numberInput} onChange={(e) => {setNumberInput(e.target.value)}} />
+        </div>
+        <div className="col-auto">
+          <button type="button" className="btn btn-primary mb-3" onClick={handleClick}>Find Prime Factors</button>
+        </div>
+        <p className="text-break">{formResult}</p>
+      </form>
     </div>
   );
 }
