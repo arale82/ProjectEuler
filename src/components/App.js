@@ -9,6 +9,7 @@ import MultiplesOf3and5 from "./MultiplesOf3and5";
 import Fibonacci from "./Fibonacci";
 import LargestPrimeFactor from "./LargestPrimeFactor";
 import LargestPalindromeProduct from "./LargestPalindromeProduct";
+import SmallestMultiple from "./SmallestMultiple";
 
 function Layout() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="fibonacci" element={<Fibonacci />} />
           <Route path="largestprimefactor" element={<LargestPrimeFactor />} />
           <Route path="largestpalindromeproduct" element={<LargestPalindromeProduct />} />
+          <Route path="smallestmultple" element={<SmallestMultiple />} />
           
           <Route path="*" element={<NoMatch />} />
         </Route>

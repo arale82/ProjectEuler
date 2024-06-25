@@ -14,6 +14,7 @@ function Navigation(){
         <li className="nav-item"><NavLink className="nav-link link-body-emphasis" to="/fibonacci">Even Fibonacci Numbers</NavLink></li>
         <li className="nav-item"><NavLink className="nav-link link-body-emphasis" to="/largestprimefactor">Largest Prime Factor</NavLink></li>
         <li className="nav-item"><NavLink className="nav-link link-body-emphasis" to="/largestpalindromeproduct">Largest Palindrome Product</NavLink></li>
+        <li className="nav-item"><NavLink className="nav-link link-body-emphasis" to="/smallestmultple">Smallest Multiple</NavLink></li>
       </ul>
     </div>
   );
