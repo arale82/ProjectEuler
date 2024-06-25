@@ -16,6 +16,9 @@ function Navigation(){
         <li className="nav-item"><NavLink className="nav-link link-body-emphasis" to="/largestpalindromeproduct">Largest Palindrome Product</NavLink></li>
         <li className="nav-item"><NavLink className="nav-link link-body-emphasis" to="/smallestmultple">Smallest Multiple</NavLink></li>
         <li className="nav-item"><NavLink className="nav-link link-body-emphasis" to="/sumsquaredifference">Sum Square Difference</NavLink></li>
+        <li className="nav-item"><NavLink className="nav-link link-body-emphasis" to="/tenthousandsfirstprime">10001st Prime</NavLink></li>
+     
+        
       </ul>
     </div>
   );
