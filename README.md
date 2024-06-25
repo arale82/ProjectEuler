@@ -40,4 +40,9 @@ Find the difference between the sum of the squares of the first one hundred natu
 
 What is the 10000st prime number?
 
+### Special Pythagorean Triplet
+A Pythagorean triplet is a set of three natural numbers, a &lt; b &lt; c, for which, a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+There exists exactly one Pythagorean triplet for which a + b + c = 100.
+Find the product abc.
+
 **Note: this is a note in the ReadMe File**

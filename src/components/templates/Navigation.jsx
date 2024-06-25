@@ -17,7 +17,8 @@ function Navigation(){
         <li className="nav-item"><NavLink className="nav-link link-body-emphasis" to="/smallestmultple">Smallest Multiple</NavLink></li>
         <li className="nav-item"><NavLink className="nav-link link-body-emphasis" to="/sumsquaredifference">Sum Square Difference</NavLink></li>
         <li className="nav-item"><NavLink className="nav-link link-body-emphasis" to="/tenthousandsfirstprime">10001st Prime</NavLink></li>
-     
+        <li className="nav-item"><NavLink className="nav-link link-body-emphasis" to="/specialpythagoreantriplet">Special Pythagorean Triplet Prime</NavLink></li>
+
         
       </ul>
     </div>

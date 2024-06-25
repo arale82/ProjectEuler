@@ -66,13 +66,13 @@ export default function SmallestMultiple () {
       <TitleSection />
 
       <p className="text-break">The smallest positive number that is evenly divisible by all of the numbers from 1 to 20 is:
-      <br />
+      </p>
       
-      <br/>
+
       <div class="spinner-border spinner-border-sm" role="status" style={{display : isLoading ? "block" : "none"}}>
         <span class="visually-hidden">Loading...</span>
       </div>
-      <strong>{result}</strong></p>
+      <p className="text-break"><strong>{result}</strong></p>
 
     </div>
   );
