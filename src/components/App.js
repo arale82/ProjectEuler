@@ -10,6 +10,7 @@ import Fibonacci from "./Fibonacci";
 import LargestPrimeFactor from "./LargestPrimeFactor";
 import LargestPalindromeProduct from "./LargestPalindromeProduct";
 import SmallestMultiple from "./SmallestMultiple";
+import SumSquareDifference from "./SumSquareDifference";
 
 function Layout() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="largestprimefactor" element={<LargestPrimeFactor />} />
           <Route path="largestpalindromeproduct" element={<LargestPalindromeProduct />} />
           <Route path="smallestmultple" element={<SmallestMultiple />} />
+          <Route path="sumsquaredifference" element={<SumSquareDifference />} />
           
           <Route path="*" element={<NoMatch />} />
         </Route>

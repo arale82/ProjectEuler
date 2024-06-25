@@ -5,7 +5,7 @@ function TitleSection(){
   return (
     <section class="text-center container">
       <div class="p-2 mb-2 bg-body-secondary text-end">25th June 2024</div>
-      <h2 class="fw-light">Multiples of 3 or 5</h2>
+      <h2 class="fw-light">Smallest Multiple</h2>
       <p class="lead text-body-secondary">
       2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
       <br /><br />
