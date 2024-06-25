@@ -23,7 +23,7 @@ export default function SumSquareDifference () {
   }, []);
 
   //leave the calculation in a function to avoid infinite loop
-  function findSumSquareDifference(maxNum){
+  function findSumSquareDifference(){
     var maxSquareSum = 0;
     var maxSum = 0;
     for(var i=1; i<=maxNum; i++){
