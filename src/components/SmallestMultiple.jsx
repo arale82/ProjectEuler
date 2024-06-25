@@ -20,22 +20,22 @@ export default function SmallestMultiple () {
   const[result, setResult] = useState();
   const[isLoading, setLoading] = useState(true);
 
+  
   useEffect(() => {
+    var maxNumber = 1000000000;
+    var maxDivisor = 20;
+    var counter = 10;
     //Runs only on the first render. 
     //Set a timeout so the other blocks can load first, then we can do the calculation.
     setTimeout(() => {
-      var num = findSmallestMultiple();
+      var num = findSmallestMultiple(counter, maxNumber, maxDivisor);
       setResult(num);
       setLoading(false);
     }, 100);
   }, []);
 
 
-  var maxNumber = 1000000000;
-  var maxDivisor = 20;
-  var counter = 10;
-  
-  function findSmallestMultiple() {
+  function findSmallestMultiple(counter, maxNumber, maxDivisor) {
     var foundNumber = 0;
     //cycle through all numbers
     while (counter <= maxNumber){

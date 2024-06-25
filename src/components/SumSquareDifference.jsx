@@ -17,7 +17,7 @@ export default function SumSquareDifference () {
 
   var maxNum = 100;
 
-  useEffect(() => {
+  useEffect((maxNum) => {
     //Runs only on the first render. 
     findSumSquareDifference(maxNum);
   }, []);
