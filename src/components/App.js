@@ -13,6 +13,7 @@ import SmallestMultiple from "./SmallestMultiple";
 import SumSquareDifference from "./SumSquareDifference";
 import TenThousandsFirstPrime from "./TenThousandsFirstPrime";
 import SpecialPythagoreanTriplet from "./SpecialPythagoreanTriplet";
+import SummationOfPrimes from "./SummationOfPrimes";
 
 function Layout() {
   return (
@@ -42,6 +43,8 @@ function App() {
           <Route path="sumsquaredifference" element={<SumSquareDifference />} />
           <Route path="tenthousandsfirstprime" element={<TenThousandsFirstPrime />} />
           <Route path="specialpythagoreantriplet" element={<SpecialPythagoreanTriplet />} />
+          <Route path="summationonprimes" element={<SummationOfPrimes />} />
+          
           
           
           <Route path="*" element={<NoMatch />} />
